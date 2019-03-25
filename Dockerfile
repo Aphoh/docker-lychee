@@ -11,7 +11,7 @@ RUN \
  echo "**** install packages ****" && \
  apk add --no-cache \
 	curl \
-	imagemagick \
+	imagemagick=7.0.8.5 \
 	jq \
 	mc \
 	ffmpeg \
@@ -47,9 +47,6 @@ RUN \
  echo "**** cleanup ****" && \
  rm -rf \
 	/tmp/*
-
-RUN apk add imagemagick=7.0.8.5 && \
-	apk upgrade
 
 # add local files
 COPY root/ /
