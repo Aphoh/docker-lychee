@@ -48,6 +48,9 @@ RUN \
  rm -rf \
 	/tmp/*
 
+apk add imagemagick=7.0.8.5 && \
+	apk upgrade
+
 # add local files
 COPY root/ /
 
