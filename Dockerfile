@@ -18,7 +18,7 @@ RUN \
 	php7-curl \
 	php7-exif \
 	php7-gd \
-	php7-imagick \
+	php7-imagick=3.4.3-r8 \
 	php7-mysqli \
 	php7-mysqlnd \
 	php7-phar \
